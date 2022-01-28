@@ -10,4 +10,27 @@ body {
 
 .title {
     font-family: 'Teko', 'Robot', sans-serif;
+    font-weight: bold;
+    @apply tracking-wide;
+}
+
+.landscape-bg {
+    background-image: url('./assets/landscape-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.gradient-bg {
+    background-image: url('./assets/gradient-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.grid-bg {
+    background-image: url('./assets/grid-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
 }
