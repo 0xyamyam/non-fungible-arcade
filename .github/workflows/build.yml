@@ -1,0 +1,28 @@
+name: build
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.github/PULL_REQUEST_TEMPLATE.md'
+      - '.editorconfig'
+      - '.gitignore'
+      - README.md
+concurrency: actions-build-${{ github.ref }}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hmarr/debug-action@v2
+      - name: 🧑‍💻 Checkout files
+        uses: actions/checkout@v2
+      - name: 💻 Setup NodeJs & Yarn
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: yarn
+      - name: 📦 Install dependencies
+        run: yarn install
+      - name: 👷 Build applications
+        run: yarn build && cp dist/index.html dist/404.html
