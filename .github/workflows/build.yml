@@ -26,3 +26,9 @@ jobs:
         run: yarn install
       - name: 👷 Build applications
         run: yarn build && cp dist/index.html dist/404.html
+      - name: 🚀 Deploy to pages
+        if: ${{ github.ref == 'refs/heads/main' }}
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+         branch: gh-pages
+         folder: dist
