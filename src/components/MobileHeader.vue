@@ -25,10 +25,10 @@
       </div>
       <div class="mt-auto mb-2">
         <div class="flex justify-center">
-          <a href="#" class="my-6 mx-4" title="Discord">
+          <a href="https://discord.gg/ptFPKz6F" class="my-6 mx-4" title="Discord" target="_blank">
             <Discord fill="#DB38B9" />
           </a>
-          <a href="#" class="my-6 mx-4" title="Twitter">
+          <a href="https://twitter.com/NFArcade" class="my-6 mx-4" title="Twitter" target="_blank">
             <Twitter fill="#DB38B9" />
           </a>
         </div>

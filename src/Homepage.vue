@@ -93,7 +93,7 @@
         <template #header><h5>How do i submit my game?</h5></template>
         <p>If you are a game developer who would like to submit a project to be placed in the arcade, please follow these steps! :)</p>
         <ol class="text-sm md:text-auto mt-8 list-decimal list-inside">
-          <li class="mb-3">Fill out this form</li>
+          <li class="mb-3">Fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmAnDYFZrd-N-jVM5mmzON0gvYqzhf2pJH_9a6cBMpWNt5rQ/viewform" target="_blank" class="text-[#DB38B9]">this form</a></li>
           <li class="mb-3">Wait for the green light</li>
           <li class="mb-3">We launch your game</li>
           <li>You site back & get paid</li>
