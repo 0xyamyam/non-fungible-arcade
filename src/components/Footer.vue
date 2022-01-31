@@ -2,9 +2,9 @@
   <footer class="py-24">
     <img class="mx-auto mb-6" src="../assets/NFA-Logo-Styled-Stacked.png" />
     <div class="py-4 text-center">
-      <a href="#" title="" class="px-6 title uppercase text-xl leading-none">Roadmap</a>
-      <a href="#" title="" class="px-6 title uppercase text-xl leading-none">FAQ</a>
-      <a href="#" title="" class="px-6 title uppercase text-xl leading-none">Play Now</a>
+      <a href="#roadmap" title="" class="px-6 title uppercase text-xl leading-none">Roadmap</a>
+      <a href="#faq" title="" class="px-6 title uppercase text-xl leading-none">FAQ</a>
+      <a href="#play" title="" class="px-6 title uppercase text-xl leading-none">Play Now</a>
     </div>
     <div class="py-4 flex justify-center">
       <a href="#" class="mx-4" title="Discord">

@@ -1,5 +1,5 @@
 <template>
-  <div class="landscape-bg mt-0 md:-mt-32">
+  <div id="play" class="landscape-bg mt-0 md:-mt-32">
     <div class="container mx-auto text-center pt-44 pb-72 md:pt-60 md:pb-96">
       <h1 class="title text-4xl md:text-9xl uppercase mt-4 mb-4">Reinventing the<br/>arcade experience</h1>
       <h2 class="title text-xl md:text-4xl uppercase text-[#DB38B9] mb-4">For the metaverse</h2>
@@ -63,7 +63,7 @@
       <img src="./assets/Game.png" class="w-72 md:w-auto mx-auto md:mx-0 md:ml-10 my-6 md:my-0" />
     </div>
   </div>
-  <div class="grid-bg py-32">
+  <div id="roadmap" class="grid-bg py-32">
     <div class="container mx-auto flex flex-col md:flex-row md:justify-center md:items-center py-32 md:py-60">
       <div class="text-center md:text-left md:mr-10">
         <h1 class="title text-4xl md:text-6xl uppercase mt-4 mb-4">Roadmap</h1>
@@ -71,18 +71,41 @@
       </div>
     </div>
   </div>
-  <div class="gradient-bg">
-    <div class="container mx-auto py-24">
+  <div id="faq" class="gradient-bg">
+    <div class="container mx-auto py-24 px-6 md:px-0">
       <div class="text-center text-white mb-16">
         <h2 class="title text-4xl md:text-6xl uppercase mt-4 mb-4">FAQ</h2>
         <h3 class="title text-xl md:text-2xl uppercase">Play fun arcade games & earn tickets</h3>
       </div>
+      <Faq class="mb-6">
+        <template #header><h5>How does Non Fungible Arcade work?</h5></template>
+        <p>The easiest way to explain the Non Fungible Arcade is that it operates the same way a traditional arcade works, but in the metaverse! Arcade machines take tokens, then you earn tickets, and you use tickets to claim limited NFTs from the prize counter!</p>
+      </Faq>
+      <Faq class="mb-6">
+        <template #header><h5>What's play & earn?</h5></template>
+        <p>Play & earn is an ecosystem that focuses on having fun playing & earning while doing so. Players inside of Non Fungible Arcade will earn tickets that they can use to claim limited NFTs from the prize counter that have…utility.</p>
+      </Faq>
+      <Faq class="mb-6">
+        <template #header><h5>What's dev & earn?</h5></template>
+        <p>Dev & earn is a new concept that allows game developers to submit a game to us, we host it in the arcade, and pay the developer 100% of their earnings from their game.</p>
+      </Faq>
+      <Faq>
+        <template #header><h5>How do i submit my game?</h5></template>
+        <p>If you are a game developer who would like to submit a project to be placed in the arcade, please follow these steps! :)</p>
+        <ol class="text-sm md:text-auto mt-8 list-decimal list-inside">
+          <li class="mb-3">Fill out this form</li>
+          <li class="mb-3">Wait for the green light</li>
+          <li class="mb-3">We launch your game</li>
+          <li>You site back & get paid</li>
+        </ol>
+      </Faq>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import Faq from './components/Faq.vue'
 
 const playing = ref(false);
 

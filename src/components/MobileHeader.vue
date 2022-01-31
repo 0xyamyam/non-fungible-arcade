@@ -18,9 +18,9 @@
     <div v-if="open" class="grow flex flex-col">
       <div class="grow">
         <ul>
-          <li><a href="#" title="" class="block py-4 title uppercase text-xl leading-none">Roadmap</a></li>
-          <li><a href="#" title="" class="block py-4 title uppercase text-xl leading-none">FAQ</a></li>
-          <li><a href="#" title="" class="block py-4 title uppercase text-xl leading-none">Play Now</a></li>
+          <li><a href="#roadmap" title="" class="block py-4 title uppercase text-xl leading-none" @click="toggleMenu">Roadmap</a></li>
+          <li><a href="#faq" title="" class="block py-4 title uppercase text-xl leading-none" @click="toggleMenu">FAQ</a></li>
+          <li><a href="#play" title="" class="block py-4 title uppercase text-xl leading-none" @click="toggleMenu">Play Now</a></li>
         </ul>
       </div>
       <div class="mt-auto mb-2">
